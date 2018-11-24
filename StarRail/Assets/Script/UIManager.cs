@@ -19,6 +19,9 @@ public class UIManager : SingletonMonoBehaviour<UIManager>
     private Text _distance = null;
 
     [SerializeField]
+    private Text[] _nowScoreArray = new Text[4];
+
+    [SerializeField]
     private GameObject _title = null;
 
     [SerializeField]
@@ -26,6 +29,8 @@ public class UIManager : SingletonMonoBehaviour<UIManager>
 
     [SerializeField]
     private GameObject _result = null;
+
+    private float _score = 0;
 
     public void SetTime(float time)
     {
@@ -39,6 +44,9 @@ public class UIManager : SingletonMonoBehaviour<UIManager>
     public void SetDistance(float distance)
     {
         distance += Player.PLUS_DISTANCE;
+
+        _score = distance;
+
         _distance.text = string.Format("{0:0000}",distance);
     }
 
@@ -77,7 +85,7 @@ public class UIManager : SingletonMonoBehaviour<UIManager>
         _title.gameObject.SetActive(false);
         _result.SetActive(false);
 
-        Debug.Log("2");
+        //Debug.Log("2");
 
         _speedMator.gameObject.SetActive(true);
     }
@@ -91,6 +99,12 @@ public class UIManager : SingletonMonoBehaviour<UIManager>
 
     public void SetResult()
     {
+        _nowScoreArray[0].text = ((int)(_score % 10f)).ToString();
+        _nowScoreArray[1].text = ((int)(_score/10f % 10f)).ToString();
+        _nowScoreArray[2].text = ((int)(_score/100 % 10f)).ToString();
+        _nowScoreArray[3].text = ((int)(_score/1000 % 10f)).ToString();
+
         _result.SetActive(true);
+        naichilab.RankingLoader.Instance.SendScoreAndShowRanking(_score);
     }
 }

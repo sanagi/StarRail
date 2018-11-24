@@ -30,7 +30,7 @@ public class StageCreator : SingletonMonoBehaviour<StageCreator> {
 
 	// Use this for initialization
 	public void CreateNextArea () {
-        Debug.Log("crea");
+        //Debug.Log("crea");
         for (int i = 0; i < 1; i++)
         {
             RailManager railManager = GameObject.Instantiate(_railParent).GetComponent<RailManager>();

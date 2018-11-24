@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1716694802780846}
+  m_IsPrefabParent: 1
+--- !u!1 &1716694802780846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4926305901339720}
+  - component: {fileID: 114416497879299370}
+  - component: {fileID: 114999255453112708}
+  m_Layer: 0
+  m_Name: RankingSceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4926305901339720
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1716694802780846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114416497879299370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1716694802780846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13be08c3906814b59acb67e0694315bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreLabel: {fileID: 0}
+  highScoreLabel: {fileID: 0}
+  nameInputField: {fileID: 0}
+  sendScoreButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  scrollViewContent: {fileID: 0}
+  rankingNodePrefab: {fileID: 1291463605961010, guid: 3873197bd3560499ea74f6d464f52cf0,
+    type: 2}
+  readingNodePrefab: {fileID: 1606644767209424, guid: 7a1cf32bb536e442b8d5445a8763ee9f,
+    type: 2}
+  notFoundNodePrefab: {fileID: 1912475606491428, guid: 6520466e4818e49ffbd84ef9c9af17ba,
+    type: 2}
+--- !u!114 &114999255453112708
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1716694802780846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cce9f462cbd54512a9cbcde9b713e2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  applicationKey: d71eff9f91e6cc28f4161ea762d6455dd4a59a913579cfd532c8ce66cb621d42
+  clientKey: a3e530d51d352eedcdec56ec535bf0d054242d727fcc1a1cbd1824c650a84613
+  usePush: 0
+  useAnalytics: 0
+  responseValidation: 0

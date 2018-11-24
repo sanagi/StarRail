@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Timer : MonoBehaviour {
-    public const float GAMETIME = 10f;
+    public const float GAMETIME = 60f;
 
     [SerializeField]
     private Player _player;
