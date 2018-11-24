@@ -51,6 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
      <Compile Include="Assets\EZ Camera Shake\Demo\Sample Scripts\ShakeByDistance.cs" />
      <Compile Include="Assets\EZ Camera Shake\Demo\Sample Scripts\ShakeOnKeyPress.cs" />
      <Compile Include="Assets\EZ Camera Shake\Demo\Sample Scripts\ShakeOnTrigger.cs" />
@@ -59,6 +66,7 @@
      <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShakePresets.cs" />
      <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShaker.cs" />
      <Compile Include="Assets\EZ Camera Shake\Scripts\Utilities\CameraUtilities.cs" />
+     <Compile Include="Assets\GameManager.cs" />
      <Compile Include="Assets\LightningBolt\LightningBoltScript.cs" />
      <Compile Include="Assets\Mirza Beig\Particle Systems\_Common\Scripts\_Demo\DemoManager.cs" />
      <Compile Include="Assets\Mirza Beig\Particle Systems\_Common\Scripts\_Demo\FPSDisplay.cs" />
@@ -133,6 +141,7 @@
      <None Include="Assets\Mirza Beig\_DOCS\README - Action VFX.txt" />
      <None Include="Assets\Mirza Beig\_DOCS\README - Ultimate VFX.txt" />
      <None Include="Assets\Mirza Beig\Particle Systems\_Common\Shaders\ASE Templates\Particle Alpha Blend Textureless.shader" />
+     <None Include="Assets\Demigiant\DOTween\readme.txt" />
      <None Include="Assets\Mirza Beig\_DOCS\README - Storm VFX.txt" />
      <None Include="Assets\Mirza Beig\Shaders\Particles\Intersection Highlight\IntersectionHighlight-Alpha.shader" />
      <None Include="Assets\Mirza Beig\Shaders\Particles\Alpha Cutoff\AlphaCutoff-Alpha.shader" />
@@ -146,11 +155,11 @@
      <None Include="Assets\Mirza Beig\Shaders\Particles\Distance Fade\DistanceFade-AnimBlendAdd.shader" />
      <None Include="Assets\Mirza Beig\Shaders\Particles\Distance Fade\DistanceFade-Alpha.shader" />
      <None Include="Assets\Mirza Beig\Particle Systems\Ultimate VFX\Demos\Starfall\README.txt" />
- <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/NUNUA/Desktop/NewStarRail/StarRail/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/NUNUA/Desktop/NewStarRail/StarRail/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>C:/Users/NUNUA/Desktop/NewStarRail/StarRail/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity2018/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -355,6 +364,9 @@
  </Reference>
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/NUNUA/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>C:/Users/NUNUA/Desktop/NewStarRail/StarRail/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity2018/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
